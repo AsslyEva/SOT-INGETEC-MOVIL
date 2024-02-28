@@ -1,0 +1,7 @@
+{
+  "name": "sot-movil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Bandeja de Entrada </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item.nombre }} - {{ item.descripcion }}
+      <ion-avatar slot="end">
+        <img [src]="item.imagenUrl" />
+      </ion-avatar>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" (click)="agregarItem()"> Agregar Item </ion-button>
+
+  <input type="file" />
+</ion-content>
